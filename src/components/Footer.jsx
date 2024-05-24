@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-export default function Header() {
+export default function Footer() {
   return (
-    <header className="bg-slate-200 shadow-md">
+    <Footer className="bg-slate-200 shadow-md">
       <div className="flex justify-around items-center">
         <h1 className="font-bold">
           <span className="text-blue-500 text-4xl">My</span>
@@ -25,6 +25,6 @@ export default function Header() {
           />
         </form>
       </div>
-    </header>
+    </Footer>
   );
 }
