@@ -1,4 +1,17 @@
 const express = require("express");
+const mongoose = require("mongoose");
+require("dotenv").config();
+
+// mongoose.connect("mongodb://localhost:27017/");
+mongoose
+  .connect(process.env.MONGO)
+  .then(() => {
+    console.log("Connected to DB");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 const app = express();
 const port = 3000;
 
